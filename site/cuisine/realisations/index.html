@@ -283,7 +283,7 @@ article:hover .fusion-image-wrapper img,article:hover .fusion-post-wrapper img{t
 						<div class="fusion-timeline-line"></div>
 		
 		
-										<h3 class="fusion-timeline-date">avril 2025</h3><div class="fusion-collapse-month">			<article id="post-3596" class="fusion-post-timeline fusion-left-column  post fusion-clearfix post-3596 type-post status-publish format-standard has-post-thumbnail hentry category-cuisines category-nos-realisations category-nos-realisations-2 tag-c-line-cuisines-a-tassin-la-demi-lune tag-cuisines-lyon">
+										<h3 class="fusion-timeline-date">avril 2025</h3><div class="fusion-collapse-month">			<article id="blog-1-post-9001" class="fusion-post-grid post-9001 post type-post status-publish format-standard has-post-thumbnail hentry category-cuisines category-nos-realisations category-nos-realisations-2 tag-c-line-cuisines-a-tassin-la-demi-lune tag-cuisines-lyon"><div class="fusion-post-wrapper" style="background-color:rgba(255,255,255,0);border:1px solid #ebeaea;border-bottom-width:3px;"><div class="fusion-flexslider flexslider fusion-flexslider-loading fusion-post-slideshow" style="border-color:#ebeaea;"><ul class="slides"><li><div class="fusion-image-wrapper" aria-haspopup="true"><a href="/renovation-entree-cuisine-lumiere/" aria-label="Rénovation d’un espace entrée et cuisine"><img decoding="async" src="/wp-content/uploads/2026/09/reno-agconcept-1.jpg" class="attachment-full size-full wp-post-image" alt="Rénovation d’un espace entrée et cuisine" loading="lazy" /></a></div></li><li><div class="fusion-image-wrapper" aria-haspopup="true"><a href="/renovation-entree-cuisine-lumiere/" aria-label="Rénovation d’un espace entrée et cuisine"><img decoding="async" src="/wp-content/uploads/2026/09/reno-agconcept-2.jpg" class="attachment-full size-full wp-post-image" alt="Rénovation d’un espace entrée et cuisine" loading="lazy" /></a></div></li><li><div class="fusion-image-wrapper" aria-haspopup="true"><a href="/renovation-entree-cuisine-lumiere/" aria-label="Rénovation d’un espace entrée et cuisine"><img decoding="async" src="/wp-content/uploads/2026/09/reno-agconcept-3.jpg" class="attachment-full size-full wp-post-image" alt="Rénovation d’un espace entrée et cuisine" loading="lazy" /></a></div></li><li><div class="fusion-image-wrapper" aria-haspopup="true"><a href="/renovation-entree-cuisine-lumiere/" aria-label="Rénovation d’un espace entrée et cuisine"><img decoding="async" src="/wp-content/uploads/2026/09/reno-agconcept-4.jpg" class="attachment-full size-full wp-post-image" alt="Rénovation d’un espace entrée et cuisine" loading="lazy" /></a></div></li><li><div class="fusion-image-wrapper" aria-haspopup="true"><a href="/renovation-entree-cuisine-lumiere/" aria-label="Rénovation d’un espace entrée et cuisine"><img decoding="async" src="/wp-content/uploads/2026/09/reno-agconcept-5.jpg" class="attachment-full size-full wp-post-image" alt="Rénovation d’un espace entrée et cuisine" loading="lazy" /></a></div></li></ul></div><div class="fusion-post-content-wrapper"><div class="fusion-post-content post-content"><h2 class="blog-shortcode-post-title entry-title"><a href="/renovation-entree-cuisine-lumiere/">Rénovation d’un espace entrée et cuisine</a></h2><div class="fusion-post-content-container"><p>Une très belle rénovation menée en collaboration avec AG Concept. L’espace d’entrée s’ouvre sur la cuisine dans une continuité parfaite, portée par un beau travail de lumière.</p></div></div></div><div class="fusion-clearfix"></div></div></article><article id="post-3596" class="fusion-post-timeline fusion-left-column  post fusion-clearfix post-3596 type-post status-publish format-standard has-post-thumbnail hentry category-cuisines category-nos-realisations category-nos-realisations-2 tag-c-line-cuisines-a-tassin-la-demi-lune tag-cuisines-lyon">
 				
 				
 				
@@ -1017,6 +1017,25 @@ body.cl-scrolled .fusion-logo img,body.cl-scrolled .fusion-standard-logo{max-hei
   document.addEventListener('scroll',onS,{passive:true,capture:true});
   window.addEventListener('resize',onS,{passive:true});
   maj();
+})();
+</script>
+
+<script id="cline-pleine-largeur">
+(function(){
+  var SEL='.cline-visite,.cline-exp';
+  function etendre(){
+    document.querySelectorAll(SEL).forEach(function(s){
+      s.style.marginLeft='0px';s.style.marginRight='0px';
+      var r=s.getBoundingClientRect(), dispo=document.documentElement.clientWidth;
+      var g=Math.round(r.left), d=Math.round(dispo-r.right);
+      if(g>0)s.style.marginLeft=(-g)+'px';
+      if(d>0)s.style.marginRight=(-d)+'px';
+    });
+  }
+  window.addEventListener('load',etendre);
+  window.addEventListener('resize',etendre,{passive:true});
+  if(document.readyState!=='loading')etendre();
+  else document.addEventListener('DOMContentLoaded',etendre);
 })();
 </script>
 </body>

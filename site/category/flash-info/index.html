@@ -705,6 +705,25 @@ body.cl-scrolled .fusion-logo img,body.cl-scrolled .fusion-standard-logo{max-hei
   maj();
 })();
 </script>
+
+<script id="cline-pleine-largeur">
+(function(){
+  var SEL='.cline-visite,.cline-exp';
+  function etendre(){
+    document.querySelectorAll(SEL).forEach(function(s){
+      s.style.marginLeft='0px';s.style.marginRight='0px';
+      var r=s.getBoundingClientRect(), dispo=document.documentElement.clientWidth;
+      var g=Math.round(r.left), d=Math.round(dispo-r.right);
+      if(g>0)s.style.marginLeft=(-g)+'px';
+      if(d>0)s.style.marginRight=(-d)+'px';
+    });
+  }
+  window.addEventListener('load',etendre);
+  window.addEventListener('resize',etendre,{passive:true});
+  if(document.readyState!=='loading')etendre();
+  else document.addEventListener('DOMContentLoaded',etendre);
+})();
+</script>
 </body>
 <!-- site-assets: injected: before </body> --></html>
 
