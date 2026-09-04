@@ -1,0 +1,7 @@
+# Masters vidéo 4K (livrables client, trop lourds pour Git — conservés en local)
+*-4k-master.mp4
+*-master-v1.mp4
+
+# Système
+.DS_Store
+Thumbs.db

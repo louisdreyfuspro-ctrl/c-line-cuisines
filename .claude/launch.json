@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "c-line-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["/Users/dreyfus/C-LINE/serve.py"],
+      "port": 8741
+    }
+  ]
+}
