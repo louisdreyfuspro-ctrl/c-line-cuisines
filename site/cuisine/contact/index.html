@@ -222,7 +222,7 @@ article:hover .fusion-image-wrapper img,article:hover .fusion-post-wrapper img{t
 /* --- textes longs (mentions légales, etc.) --- */
 .post-content p{line-height:1.75;}
 </style>
-<style id="cline-contact-css">
+<style id="cline-contact-css">#cline-contact-form input::placeholder,#cline-contact-form textarea::placeholder{color:#b8b2ac;opacity:1;}
 /* --- Ton plus chaleureux --- */
 #cline-contact-form p{text-transform:none!important;letter-spacing:.2px!important;
   font-size:13.5px!important;color:#7d7873!important;font-weight:500;}
@@ -304,7 +304,7 @@ article:hover .fusion-image-wrapper img,article:hover .fusion-post-wrapper img{t
   background:#2b2b2b;color:#fff!important;text-decoration:none;font-size:13px;font-weight:600;
   letter-spacing:1.5px;text-transform:uppercase;transition:background .2s,transform .2s;}
 .cline-itineraire:hover{background:#c9985f;transform:translateY(-2px);}
-</style></head>
+</style><script type="application/ld+json" id="cline-fiche-etablissement">{"@context":"https://schema.org","@type":"HomeGoodsStore","@id":"https://www.c-line-cuisines.com/#etablissement","name":"C-LINE Cuisines","description":"Cuisines, salles de bain et rangements sur mesure à Tassin-La-Demi-Lune, près de Lyon. Show-room de 140 m².","url":"https://www.c-line-cuisines.com/","telephone":"+33478476951","email":"corinne@c-line-cuisines.com","image":"https://www.c-line-cuisines.com/wp-content/uploads/2026/09/hero-contact-magasin.jpg","address":{"@type":"PostalAddress","streetAddress":"209 Avenue Charles de Gaulle","postalCode":"69160","addressLocality":"Tassin-la-Demi-Lune","addressRegion":"Auvergne-Rhône-Alpes","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":45.755688,"longitude":4.7719473},"hasMap":"https://www.google.com/maps/search/?api=1&query=209+Avenue+Charles+de+Gaulle,+69160+Tassin-la-Demi-Lune","areaServed":[{"@type":"City","name":"Lyon"},{"@type":"City","name":"Tassin-la-Demi-Lune"}],"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"09:30","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"14:30","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:30","closes":"12:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"14:30","closes":"18:00"}],"openingHours":"Mo by appointment","sameAs":["https://www.facebook.com/clinecuisines","https://www.instagram.com/c_line_cuisines/"]}</script></head>
 
 <body class="wp-singular page-template page-template-100-width page-template-100-width-php page page-id-193 page-child parent-pageid-2 wp-theme-Avada wp-child-theme-C_Line_Cuisines fusion-image-hovers fusion-pagination-sizing fusion-button_type-flat fusion-button_span-no fusion-button_gradient-linear avada-image-rollover-circle-no avada-image-rollover-no fusion-has-button-gradient fusion-body ltr fusion-sticky-header no-tablet-sticky-header no-mobile-sticky-header avada-has-rev-slider-styles fusion-disable-outline fusion-sub-menu-fade mobile-logo-pos-left layout-wide-mode avada-has-boxed-modal-shadow- layout-scroll-offset-full avada-has-zero-margin-offset-top fusion-top-header menu-text-align-left mobile-menu-design-classic fusion-show-pagination-text fusion-header-layout-v1 avada-responsive avada-footer-fx-bg-parallax avada-menu-highlight-style-bar fusion-search-form-classic fusion-main-menu-search-dropdown fusion-avatar-square avada-sticky-shrinkage avada-dropdown-styles avada-blog-layout-timeline avada-blog-archive-layout-grid avada-header-shadow-no avada-menu-icon-position-left avada-has-megamenu-shadow avada-has-breadcrumb-mobile-hidden avada-has-titlebar-hide avada-has-pagination-padding avada-flyout-menu-direction-fade avada-ec-views-v1" data-awb-post-id="193">
 		<a class="skip-link screen-reader-text" href="#content">Passer au contenu</a>
@@ -364,16 +364,16 @@ article:hover .fusion-image-wrapper img,article:hover .fusion-post-wrapper img{t
 <input type="hidden" name="_next" value="" id="cline-form-next">
 <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 <p>Votre nom</p>
-<p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" required value="" type="text" name="your-name" /></span>
+<p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" required value="" type="text" name="your-name" autocomplete="name" placeholder="Marie Dupont" /></span>
 </p>
 <p>Votre e-mail</p>
-<p><span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" required value="" type="email" name="your-email" /></span>
+<p><span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" required value="" type="email" name="your-email" autocomplete="email" inputmode="email" placeholder="marie@exemple.fr" /></span>
 </p>
 <p>Le sujet</p>
-<p><span class="wpcf7-form-control-wrap" data-name="your-subject"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" aria-invalid="false" value="" type="text" name="your-subject" /></span>
+<p><span class="wpcf7-form-control-wrap" data-name="your-subject"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text" aria-invalid="false" value="" type="text" name="your-subject" placeholder="Projet de cuisine, demande de rendez-vous…" /></span>
 </p>
 <p>Votre message</p>
-<p><span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" name="your-message"></textarea></span>
+<p><span class="wpcf7-form-control-wrap" data-name="your-message" placeholder="Dites-nous en quelques mots ce que vous imaginez : la pièce, vos envies, vos contraintes…"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" name="your-message"></textarea></span>
 </p>
 <p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Envoyer mon message" />
 </p><div class="fusion-alert alert custom alert-custom fusion-alert-center wpcf7-response-output fusion-alert-capitalize alert-dismissable" role="alert" style="border-width:1px;"><div class="fusion-alert-content-wrapper"><span class="fusion-alert-content"></span></div><button type="button" class="close toggle-alert" data-dismiss="alert" aria-label="Close">&times;</button></div>
