@@ -653,6 +653,9 @@ var RocketPreloadLinksConfig = {"excludeUris":"/|/(?:.+/)?feed(?:/(?:.+/?)?)?$|/
   if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
     var secs=[].slice.call(document.querySelectorAll('.fusion-fullwidth')).filter(function(s){
       var st=s.getAttribute('style')||'';
+      /* on laisse tranquilles les en-tetes qui portent du texte : le deplacement
+         de l'image les rendrait bancals et illisibles */
+      if(s.querySelector('.cline-hero-contact,.cline-qsn-hero,h1'))return false;
       return st.indexOf('background-image')>-1 && st.indexOf('cover')>-1 && s.offsetHeight>180 && s.offsetHeight<window.innerHeight*1.6;
     });
     if(secs.length){
