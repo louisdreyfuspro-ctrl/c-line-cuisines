@@ -23,8 +23,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Préfixer les chemins pour le sous-dossier GitHub Pages
-        run: python3 prefixe_chemins.py site "${GITHUB_REPOSITORY#*/}"
+      - name: Préfixer les chemins (uniquement sans domaine personnalisé)
+        run: |
+          if [ -f site/CNAME ]; then
+            echo "Domaine personnalisé détecté ($(cat site/CNAME)) : site servi à la racine, pas de préfixe."
+          else
+            python3 prefixe_chemins.py site "${GITHUB_REPOSITORY#*/}"
+          fi
 
       - name: Désactiver Jekyll
         run: touch site/.nojekyll
